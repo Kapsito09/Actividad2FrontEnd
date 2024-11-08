@@ -1,6 +1,6 @@
 footer {
-  background-color: #282c34;
-  color: white;
+  background-color: var(--app-color);
+  color: var(--title-color);
   text-align: center;
   padding: 20px;
   margin-top: 20px;
@@ -17,7 +17,7 @@ footer {
 }
 
 .social-links a {
-  color: #61dafb;
+  color: var(--primary-color);
   margin: 0 10px;
   text-decoration: none;
 }
