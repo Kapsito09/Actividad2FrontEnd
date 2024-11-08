@@ -2,8 +2,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #282c34;
-    color: white;
+    background-color: var(--app-color);
+    color: var(--title-color);
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -26,7 +26,7 @@ header {
 
 .search-button {
     padding: 10px 15px;
-    background-color: #61dafb;
+    background-color: var(--secondary-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
