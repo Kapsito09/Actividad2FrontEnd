@@ -50,34 +50,57 @@
 
 }
 
-// .card:hover {
-//     transform: scale(1.05);
-// }
+.btn {
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
 
-// .card img {
-//     border-radius: 10px 10px 0 0;
-//     width: 100%;
-// }
+  /* El modal está inicialmente oculto */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+  }
 
-// .card h3 {
-//     margin: 10px 0;
-// }
+  /* El contenido del modal */
+  .modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+  }
 
-// .card p {
-//     padding: 0 10px;
-// }
+  /* El botón de cerrar dentro del modal */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+  }
 
-// .card button {
-//     background-color: var(--primary-color);
-//     border: none;
-//     border-radius: 5px;
-//     color: var(--title-color);
-//     cursor: pointer;
-//     padding: 10px;
-//     margin: 10px 0;
-//     transition: background-color 0.3s;
-// }
+  /* Estilos para el checkbox oculto (para controlar la visibilidad del modal) */
+  #modal-toggle {
+    display: none;
+  }
 
-// .card button:hover {
-//     background-color: var(--app-color);
-// }
+  /* Cuando el checkbox está marcado, se muestra el modal */
+  #modal-toggle:checked + .modal {
+    display: flex;
+  }
